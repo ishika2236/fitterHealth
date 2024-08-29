@@ -1,0 +1,617 @@
+<html lang="en"><head><style type="text/css">.tippy-touch{cursor:pointer!important}.tippy-notransition{transition:none!important}.tippy-popper{max-width:350px;-webkit-perspective:700px;perspective:700px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none;line-height:1.4}.tippy-popper[data-html]{max-width:96%;max-width:calc(100% - 20px)}.tippy-popper[x-placement^=top] .tippy-backdrop{border-radius:40% 40% 0 0}.tippy-popper[x-placement^=top] .tippy-roundarrow{bottom:-8px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.tippy-popper[x-placement^=top] .tippy-arrow{border-top:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;bottom:-7px;margin:0 6px;-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=top] .tippy-backdrop{-webkit-transform-origin:0 90%;transform-origin:0 90%}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,25%);transform:scale(6) translate(-50%,25%);opacity:1}.tippy-popper[x-placement^=top] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,25%);transform:scale(1) translate(-50%,25%);opacity:0}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(-20px);transform:translateY(-20px)}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) rotateX(0);transform:translateY(-10px) rotateX(0)}.tippy-popper[x-placement^=top] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(90deg);transform:translateY(0) rotateX(90deg)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(-10px) scale(1);transform:translateY(-10px) scale(1)}.tippy-popper[x-placement^=top] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=bottom] .tippy-backdrop{border-radius:0 0 30% 30%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow{top:-8px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(0);transform:rotate(0)}.tippy-popper[x-placement^=bottom] .tippy-arrow{border-bottom:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;top:-7px;margin:0 6px;-webkit-transform-origin:50% 100%;transform-origin:50% 100%}.tippy-popper[x-placement^=bottom] .tippy-backdrop{-webkit-transform-origin:0 -90%;transform-origin:0 -90%}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-50%,-125%);transform:scale(6) translate(-50%,-125%);opacity:1}.tippy-popper[x-placement^=bottom] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1) translate(-50%,-125%);transform:scale(1) translate(-50%,-125%);opacity:0}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) rotateX(0);transform:translateY(10px) rotateX(0)}.tippy-popper[x-placement^=bottom] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) rotateX(-90deg);transform:translateY(0) rotateX(-90deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateY(10px) scale(1);transform:translateY(10px) scale(1)}.tippy-popper[x-placement^=bottom] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=left] .tippy-backdrop{border-radius:50% 0 0 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow{right:-16px;-webkit-transform-origin:33.33333333% 50%;transform-origin:33.33333333% 50%}.tippy-popper[x-placement^=left] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(90deg);transform:rotate(90deg)}.tippy-popper[x-placement^=left] .tippy-arrow{border-left:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;right:-7px;margin:3px 0;-webkit-transform-origin:0 50%;transform-origin:0 50%}.tippy-popper[x-placement^=left] .tippy-backdrop{-webkit-transform-origin:100% 0;transform-origin:100% 0}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(40%,-50%);transform:scale(6) translate(40%,-50%);opacity:1}.tippy-popper[x-placement^=left] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(40%,-50%);transform:scale(1.5) translate(40%,-50%);opacity:0}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(-20px);transform:translateX(-20px)}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) rotateY(0);transform:translateX(-10px) rotateY(0)}.tippy-popper[x-placement^=left] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(-90deg);transform:translateX(0) rotateY(-90deg)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(-10px) scale(1);transform:translateX(-10px) scale(1)}.tippy-popper[x-placement^=left] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper[x-placement^=right] .tippy-backdrop{border-radius:0 50% 50% 0}.tippy-popper[x-placement^=right] .tippy-roundarrow{left:-16px;-webkit-transform-origin:66.66666666% 50%;transform-origin:66.66666666% 50%}.tippy-popper[x-placement^=right] .tippy-roundarrow svg{position:absolute;left:0;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.tippy-popper[x-placement^=right] .tippy-arrow{border-right:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;left:-7px;margin:3px 0;-webkit-transform-origin:100% 50%;transform-origin:100% 50%}.tippy-popper[x-placement^=right] .tippy-backdrop{-webkit-transform-origin:-100% 0;transform-origin:-100% 0}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=visible]{-webkit-transform:scale(6) translate(-140%,-50%);transform:scale(6) translate(-140%,-50%);opacity:1}.tippy-popper[x-placement^=right] .tippy-backdrop[data-state=hidden]{-webkit-transform:scale(1.5) translate(-140%,-50%);transform:scale(1.5) translate(-140%,-50%);opacity:0}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-toward][data-state=hidden]{opacity:0;-webkit-transform:translateX(20px);transform:translateX(20px)}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) rotateY(0);transform:translateX(10px) rotateY(0)}.tippy-popper[x-placement^=right] [data-animation=perspective][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) rotateY(90deg);transform:translateX(0) rotateY(90deg)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade][data-state=hidden]{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=visible]{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift-away][data-state=hidden]{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=visible]{opacity:1;-webkit-transform:translateX(10px) scale(1);transform:translateX(10px) scale(1)}.tippy-popper[x-placement^=right] [data-animation=scale][data-state=hidden]{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:.9rem;padding:.3rem .6rem;text-align:center;will-change:transform;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#333}.tippy-tooltip[data-size=small]{padding:.2rem .4rem;font-size:.75rem}.tippy-tooltip[data-size=large]{padding:.4rem .8rem;font-size:1rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:transparent}.tippy-tooltip[data-animatefill] .tippy-content{transition:-webkit-clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98);transition:clip-path cubic-bezier(.46,.1,.52,.98),-webkit-clip-path cubic-bezier(.46,.1,.52,.98)}.tippy-tooltip[data-interactive],.tippy-tooltip[data-interactive] path{pointer-events:auto}.tippy-tooltip[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.53,2,.36,.85)}.tippy-tooltip[data-inertia][data-state=hidden]{transition-timing-function:ease}.tippy-arrow,.tippy-roundarrow{position:absolute;width:0;height:0}.tippy-roundarrow{width:24px;height:8px;fill:#333;pointer-events:none}.tippy-backdrop{position:absolute;will-change:transform;background-color:#333;border-radius:50%;width:26%;left:50%;top:50%;z-index:-1;transition:all cubic-bezier(.46,.1,.52,.98);-webkit-backface-visibility:hidden;backface-visibility:hidden}.tippy-backdrop:after{content:"";float:left;padding-top:100%}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(100% 100% at 50% 50%);clip-path:ellipse(100% 100% at 50% 50%)}body:not(.tippy-touch) .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(5% 50% at 50% 50%);clip-path:ellipse(5% 50% at 50% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 0 50%);clip-path:ellipse(135% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=right] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 0 50%);clip-path:ellipse(40% 100% at 0 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=visible] .tippy-content{-webkit-clip-path:ellipse(135% 100% at 100% 50%);clip-path:ellipse(135% 100% at 100% 50%)}body:not(.tippy-touch) .tippy-popper[x-placement=left] .tippy-tooltip[data-animatefill][data-state=hidden] .tippy-content{-webkit-clip-path:ellipse(40% 100% at 100% 50%);clip-path:ellipse(40% 100% at 100% 50%)}@media (max-width:360px){.tippy-popper{max-width:96%;max-width:calc(100% - 20px)}}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/favicon.png" rel="icon" type="image/png">
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/assets/css/icons.css">
+    <link rel="stylesheet" href="/static/assets/css/uikit.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
+    <link rel="stylesheet" href="/static/assets/css/tailwind.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="vsc-initialized">
+
+            <header>
+                <div class="header_inner">
+                    <form action="/search" method="POST">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="xUAbrXSTlgi6s4zaur16SAvwKgU6R8kp8ERMxKUE11lsnUXIQfBrcXFLUZq01cRC">
+                    <div class="left-side">
+                        <!-- Logo -->
+                        <div id="logo" class=" uk-hidden@s">
+                            <a href="home.html">
+                                <b><h1 style="text-transform: uppercase;">Social Book</h1></b>
+                            </a>
+                        </div>
+
+                        <!--<div class="triger" uk-toggle="target: #wrapper ; cls: sidebar-active">
+                            <i class="uil-bars"></i>
+                        </div>-->
+
+                        <!-- <div class="header_search"> -->
+                            <input type="text" name="username" placeholder="Search for username..">&nbsp; &nbsp;
+                            <button type="submit"><i class="fa fa-search fa-1x"></i></button>
+                        <!-- </div> -->
+
+                    </div>
+                    </form>
+                    <a href="workout"><button class="workout"> Workout</button></a>
+                    <a href="nutrition"><button class="nutrition">Nutrition </button></a>
+                    <div class="right-side lg:pr-4">
+                         <!-- upload -->
+                        <a href="#" class="bg-pink-500 flex font-bold hidden hover:bg-pink-600 hover:text-white inline-block items-center lg:block max-h-10 mr-4 px-4 py-2 rounded shado text-white" aria-expanded="false">
+                            <ion-icon name="add-circle" class="-mb-1
+                             mr-1 opacity-90 text-xl uilus-circle"></ion-icon> Upload Pics
+                        </a>
+                         <!-- upload dropdown box -->
+                        <div uk-dropdown="pos: top-right;mode:click ; animation: uk-animation-slide-bottom-small" class="header_dropdown uk-dropdown">
+    
+                            <!-- notivication header -->
+                            <div class="px-4 py-3 -mx-5 -mt-4 mb-5 border-b">
+                                <h4>Upload Pics</h4>
+                            </div>
+    
+                            <!-- notification contents -->
+                            <div class="flex justify-center flex-center text-center">
+    
+                                <div class="flex flex-col choose-upload text-center">
+                                   
+                                    <div class="bg-gray-100 border-2 border-dashed flex flex-col h-24 items-center justify-center relative w-full rounded-lg  ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-12">
+                                            <path d="M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 13H11V9.413l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13H5.5z"></path>
+                                            <path d="M9 13h2v5a1 1 0 11-2 0v-5z"></path>
+                                        </svg>
+                                    </div>
+
+                                    <form action="upload" method="POST" enctype="multipart/form-data">
+                                    <input type="hidden" name="csrfmiddlewaretoken" value="xUAbrXSTlgi6s4zaur16SAvwKgU6R8kp8ERMxKUE11lsnUXIQfBrcXFLUZq01cRC">
+                                    <p class="my-3 leading-6"> Upload pics
+                                    </p>
+                                    <div>
+                                        <input type="file" name="image_upload">
+                                        <!-- <a href="#" class="button soft-warning small"> Choose file</a> -->
+                                        <textarea class="button soft-warning small" name="caption" placeholder="caption..."></textarea>
+                                        <br>
+                                        <button class="button bg-blue-700" type="submit">Upload</button>
+                                    </div>
+                                    </form>
+
+                                    <!-- <a href="#" class="uk-text-muted mt-3 uk-link"
+                                        uk-toggle="target: .choose-upload ;  animation: uk-animation-slide-right-small, uk-animation-slide-left-medium; queued: true">
+                                        Or Import Video </a> -->
+                                </div>
+    
+                                <div class="uk-flex uk-flex-column choose-upload" hidden="">
+                                    <div class="mx-auto flex flex-col h-24 items-center justify-center relative w-full rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-12">
+                                            <path fill-rule="evenodd" d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="my-3 leading-6"> Import videos from YouTube <br> Copy / Paste your video link here </p>
+                                    <form class="uk-grid-small uk-grid" uk-grid="">
+                                        <div class="uk-width-expand">
+                                            <input type="text" class="uk-input uk-form-small  bg-gray-200 " style="box-shadow:none" placeholder="Paste link">
+                                        </div>
+                                        <div class="uk-width-auto"> <button type="submit" class="button soft-warning -ml-2">
+                                                Import </button> </div>
+                                    </form>
+                                    <a href="#" class="uk-text-muted mt-3 uk-link" uk-toggle="target: .choose-upload ; animation: uk-animation-slide-left-small, uk-animation-slide-right-medium; queued: true">
+                                        Or Upload Video </a>
+                                </div>
+    
+                            </div>
+                            <div class="px-4 py-3 -mx-5 -mb-4 mt-5 border-t text-sm">
+                                Your Image size Must be Maxmium 999MB
+                            </div>
+                        </div>
+                        
+                         <!-- Notification -->
+
+                        <!-- <a href="#" class="header-links-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M12 22a2.02 2.02 0 0 1-2.01-2h4a2.02 2.02 0 0 1-.15.78a2.042 2.042 0 0 1-1.44 1.18h-.047A1.922 1.922 0 0 1 12 22zm8-3H4v-2l2-1v-5.5a8.065 8.065 0 0 1 .924-4.06A4.654 4.654 0 0 1 10 4.18V2h4v2.18c2.579.614 4 2.858 4 6.32V16l2 1v2z" fill="currentColor"/></g></svg>
+                        </a>
+                        
+                        <div uk-drop="mode: click;offset: 4" class="header_dropdown">
+                            <h4
+                                class="-mt-5 -mx-5 bg-gradient-to-t from-gray-100 to-gray-50 border-b font-bold px-6 py-3">
+                                Notification </h4>
+                            <ul class="dropdown_scrollbar" data-simplebar>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar"> <img src="/static/assets/images/avatars/avatar-1.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <p> <strong class="text-link" >Taiye</strong>  
+                                                <span class="text-link"> is following you  </span>
+                                            </p>
+                                            <span class="time-ago"> 2 hours ago </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+
+                            </ul>
+                            <a href="#" class="see-all">See all</a>
+                        </div> -->
+
+                        <!-- Messages -->
+
+                        <!-- <a href="#" class="header-links-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="0.5em" height="0.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="currentColor"><path d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/></g></svg>
+                        </a>
+                        <div uk-drop="mode: click;offset: 4" class="header_dropdown">
+                            <h4
+                                class="-mt-5 -mx-5 bg-gradient-to-t from-gray-100 to-gray-50 border-b font-bold px-6 py-3">
+                                Messages </h4>
+                            <ul class="dropdown_scrollbar" data-simplebar>
+                                <li>
+                                    <a href="#">
+                                        <div class="drop_avatar"> <img src="/static/assets/images/avatars/avatar-1.jpg" alt="">
+                                        </div>
+                                        <div class="drop_content">
+                                            <strong> Taiye </strong> <time> 6:43 PM</time>
+                                            <p> hi tomi </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+
+
+                            </ul>
+                            <a href="#" class="see-all">See all</a>
+                        </div> -->
+
+                        <!-- profile -->
+
+                        <a href="#" aria-expanded="false">
+                            <img src="/media/profile_images/profile-3.jpg" class="header-avatar" alt="">
+                        </a>
+                        <div uk-drop="mode: click;offset:9" class="header_dropdown profile_dropdown border-t uk-drop">
+                            <ul>
+                                <li><a href="/settings"> Account setting </a> </li>
+                                <li><a href="logout"> Log Out</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <div class="container m-auto">
+
+                <!--<h1 class="lg:text-2xl text-lg font-extrabold leading-none text-gray-900 tracking-tight mb-5"> Feed </h1>--->
+
+                <div class="lg:flex justify-center lg:space-x-10 lg:space-y-0 space-y-5">
+
+                    <!-- left sidebar-->
+                    <!-- <div class="space-y-5 flex-shrink-0 lg:w-7/12">
+                        <div class="feeds">
+                            <div class="feed">
+                                <div class="head">                     
+                                </div>
+                                 <div class="user">
+                                     <div class="profile-pic">
+                                         <img src="../static/profile-14.jpg" alt="">
+                                     </div>
+                                     <div class="info">
+                                         <h3>Lana Rose</h3>
+                                         <small>Dubai, 15 MINUTES AGO</small>
+                                     </div>
+                                     <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                                 </div>
+        
+                                 <div class="photo">
+                                     <img src="../static/feed-1.jpg" alt="">
+                                 </div>
+        
+                                 <div class="action-button">
+                                     <div class="interaction-button">
+                                         <span><i class="uil uil-thumbs-up"></i></span>
+                                         <span><i class="uil uil-comment"></i></span>
+                                         <span><i class="uil uil-share"></i></span>
+                                     </div>
+                                     <div class="bookmark">
+                                         <span><i class="uil uil-bookmark"></i></span>
+                                     </div>
+                                 </div>
+        
+                                 <div class="liked-by">
+                                     <span><img src="../static/profile-15.jpg"></span>
+                                     <span><img src="../static/profile-16.jpg"></span>
+                                     <span><img src="../static/profile-17.jpg"></span>
+                                     ,<p>Liked by <b>Enrest Achiever</b>snd <b>220 others</b></p>
+                                 </div>
+        
+                                 <div class="caption">
+                                     <p><b>Lana Rose</b>Lorem ipsum dolor storiesquiquam eius.
+                                    <span class="hash-tag">#lifestyle</span></p>
+                                 </div>
+                                 <div class="comments text-muted">View all 130 comments</div>
+                            </div>
+                        
+                            <div class="feed">
+                                <div class="head">
+                                    
+                                </div>
+                                 <div class="user">
+                                     <div class="profile-pic">
+                                         <img src="../static/profile-15.jpg" alt="">
+                                     </div>
+                                     <div class="info">
+                                         <h3>Chris Brown</h3>
+                                         <small>New York, 1 HOUR AGO</small>
+                                     </div>
+                                     <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                                 </div>
+        
+                                 <div class="photo">
+                                     <img src="../static/feed-2.jpg" alt="">
+                                 </div>
+        
+                                 <div class="action-button">
+                                     <div class="interaction-button">
+                                         <span><i class="uil uil-thumbs-up"></i></span>
+                                         <span><i class="uil uil-comment"></i></span>
+                                         <span><i class="uil uil-share"></i></span>
+                                     </div>
+                                     <div class="bookmark">
+                                         <span><i class="uil uil-bookmark"></i></span>
+                                     </div>
+                                 </div>
+        
+                                 <div class="liked-by">
+                                     <span><img src="../static/profile-2.jpg"></span>
+                                     <span><img src="../static/profile-4.jpg"></span>
+                                     <span><img src="../static/profile-6.jpg"></span>
+                                     ,<p>Liked by <b>Enrest Achiever</b>snd <b>188 others</b></p>
+                                 </div>
+        
+                                 <div class="caption">
+                                     <p><b>Chirs Brown</b>Lorem ipsum dolor storiesquiquam eius.
+                                    <span class="hash-tag">#lifestyle</span></p>
+                                 </div>
+                                 <div class="comments text-muted">View all 40 comments</div>
+                            </div>
+                        
+                            <div class="feed">
+                                <div class="head">
+                                    
+                                </div>
+                                 <div class="user">
+                                     <div class="profile-pic">
+                                         <img src="../static/profile-16.jpg" alt="">
+                                     </div>
+                                     <div class="info">
+                                         <h3>John Samron</h3>
+                                         <small>Amsterdam, 7 HOURS AGO</small>
+                                     </div>
+                                     <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                                 </div>
+        
+                                 <div class="photo">
+                                     <img src="../static/feed-3.jpg" alt="">
+                                 </div>
+        
+                                 <div class="action-button">
+                                     <div class="interaction-button">
+                                         <span><i class="uil uil-thumbs-up"></i></span>
+                                         <span><i class="uil uil-comment"></i></span>
+                                         <span><i class="uil uil-share"></i></span>
+                                     </div>
+                                     <div class="bookmark">
+                                         <span><i class="uil uil-bookmark"></i></span>
+                                     </div>
+                                 </div>
+        
+                                 <div class="liked-by">
+                                     <span><img src="../static/profile-3.jpg"></span>
+                                     <span><img src="../static/profile-5.jpg"></span>
+                                     <span><img src="../static/profile-7.jpg"></span>
+                                     ,<p>Liked by <b>Enrest Achiever</b>snd <b>130 others</b></p>
+                                 </div>
+        
+                                 <div class="caption">
+                                     <p><b>John Samron</b>Lorem ipsum dolor storiesquiquam eius.
+                                    <span class="hash-tag">#lifestyle</span></p>
+                                 </div>
+                                 <div class="comments text-muted">View all 15 comments</div>
+                            </div>
+                        
+                            <div class="feed">
+                                <div class="head">
+                                    
+                                </div>
+                                 <div class="user">
+                                     <div class="profile-pic">
+                                         <img src="../static/profile-17.jpg" alt="">
+                                     </div>
+                                     <div class="info">
+                                         <h3>Kareena Joshua</h3>
+                                         <small>USA, 3 HOURS AGO</small>
+                                     </div>
+                                     <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                                 </div>
+        
+                                 <div class="photo">
+                                     <video src="../static/feed-4.mp4" alt="">
+                                 </video></div>
+        
+                                 <div class="action-button">
+                                     <div class="interaction-button">
+                                         <span><i class="uil uil-thumbs-up"></i></span>
+                                         <span><i class="uil uil-comment"></i></span>
+                                         <span><i class="uil uil-share"></i></span>
+                                     </div>
+                                     <div class="bookmark">
+                                         <span><i class="uil uil-bookmark"></i></span>
+                                     </div>
+                                 </div>
+        
+                                 <div class="liked-by">
+                                     <span><img src="../static/profile-8.jpg"></span>
+                                     <span><img src="../static/profile-10.jpg"></span>
+                                     <span><img src="../static/profile-12.jpg"></span>
+                                     ,<p>Liked by <b>Enrest Achiever</b>snd <b>280 others</b></p>
+                                 </div>
+        
+                                 <div class="caption">
+                                     <p><b>Kareena Joshua</b>Lorem ipsum dolor storiesquiquam eius.
+                                    <span class="hash-tag">#lifestyle</span></p>
+                                 </div>
+                                 <div class="comments text-muted">View all 110 comments</div>
+                            </div>
+                        
+                            <div class="feed">
+                                <div class="head">
+                                    
+                                </div>
+                                 <div class="user">
+                                     <div class="profile-pic">
+                                         <img src="../static/profile-18.jpg" alt="">
+                                     </div>
+                                     <div class="info">
+                                         <h3>Dan Smith</h3>
+                                         <small>Paris, 1 DAY AGO</small>
+                                     </div>
+                                     <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                                 </div>
+        
+                                 <div class="photo">
+                                     <img src="../static/feed-5.jpg" alt="">
+                                 </div>
+        
+                                 <div class="action-button">
+                                     <div class="interaction-button">
+                                         <span><i class="uil uil-thumbs-up"></i></span>
+                                         <span><i class="uil uil-comment"></i></span>
+                                         <span><i class="uil uil-share"></i></span>
+                                     </div>
+                                     <div class="bookmark">
+                                         <span><i class="uil uil-bookmark"></i></span>
+                                     </div>
+                                 </div>
+        
+                                 <div class="liked-by">
+                                     <span><img src="../static/profile-9.jpg"></span>
+                                     <span><img src="../static/profile-11.jpg"></span>
+                                     <span><img src="../static/profile-13.jpg"></span>
+                                     ,<p>Liked by <b>Enrest Achiever</b>snd <b>420 others</b></p>
+                                 </div>
+        
+                                 <div class="caption">
+                                     <p><b>Dan Smith</b>Lorem ipsum dolor storiesquiquam eius.
+                                    <span class="hash-tag">#lifestyle</span></p>
+                                 </div>
+                                 <div class="comments text-muted">View all 120 comments</div>
+                            </div>
+                        
+                            <div class="feed">
+                                <div class="head">
+                                    
+                                </div>
+                                 <div class="user">
+                                     <div class="profile-pic">
+                                         <img src="../static/profile-19.jpg" alt="">
+                                     </div>
+                                     <div class="info">
+                                         <h3>Karim Benzema</h3>
+                                         <small>Mumbai, 30 MINUTES AGO</small>
+                                     </div>
+                                     <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                                 </div>
+        
+                                 <div class="photo">
+                                     <img src="../static/feed-6.jpg" alt="">
+                                 </div>
+        
+                                 <div class="action-button">
+                                     <div class="interaction-button">
+                                         <span><i class="uil uil-thumbs-up"></i></span>
+                                         <span><i class="uil uil-comment"></i></span>
+                                         <span><i class="uil uil-share"></i></span>
+                                     </div>
+                                     <div class="bookmark">
+                                         <span><i class="uil uil-bookmark"></i></span>
+                                     </div>
+                                 </div>
+        
+                                 <div class="liked-by">
+                                     <span><img src="../static/profile-15.jpg"></span>
+                                     <span><img src="../static/profile-14.jpg"></span>
+                                     <span><img src="../static/profile-17.jpg"></span>
+                                     ,<p>Liked by <b>Enrest Achiever</b>snd <b>150 others</b></p>
+                                 </div>
+        
+                                 <div class="caption">
+                                     <p><b>Karim Benzema</b>Lorem ipsum dolor storiesquiquam eius.
+                                    <span class="hash-tag">#lifestyle</span></p>
+                                 </div>
+                                 <div class="comments text-muted">View all 30 comments</div>
+                            </div>
+                            <div class="feed">
+                                <div class="head">
+                                    
+                                </div>
+                                 <div class="user">
+                                     <div class="profile-pic">
+                                         <img src="../static/profile-20.jpg" alt="">
+                                     </div>
+                                     <div class="info">
+                                         <h3>Srishti Tirkey</h3>
+                                         <small>Bangalore, 11 HOURS AGO</small>
+                                     </div>
+                                     <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                                 </div>
+        
+                                 <div class="photo">
+                                     <img src="../static/feed-7.jpg" alt="">
+                                 </div>
+        
+                                 <div class="action-button">
+                                     <div class="interaction-button">
+                                         <span><i class="uil uil-thumbs-up"></i></span>
+                                         <span><i class="uil uil-comment"></i></span>
+                                         <span><i class="uil uil-share"></i></span>
+                                     </div>
+                                     <div class="bookmark">
+                                         <span><i class="uil uil-bookmark"></i></span>
+                                     </div>
+                                 </div>
+        
+                                 <div class="liked-by">
+                                     <span><img src="../static/profile-15.jpg"></span>
+                                     <span><img src="../static/profile-13.jpg"></span>
+                                     <span><img src="../static/profile-10.jpg"></span>
+                                     ,<p>Liked by <b>Enrest Achiever</b>snd <b>530 others</b></p>
+                                 </div>
+        
+                                 <div class="caption">
+                                     <p><b>Srishti Tirkey</b>Lorem ipsum dolor storiesquiquam eius.
+                                    <span class="hash-tag">#lifestyle</span></p>
+                                 </div>
+                                 <div class="comments text-muted">View all 190 comments</div>
+                            </div>
+                        </div>
+        
+                    </div> -->
+
+                        <!-- post 1-->
+
+                        
+    
+                        
+
+
+                    </div>
+
+                    <!-- right sidebar-->
+                    <div class="lg:w-5/12">
+
+                        <div class="bg-white  shadow-md rounded-md overflow-hidden">
+
+                            <div class="bg-gray-50  border-b border-gray-100 flex items-baseline justify-between py-4 px-6 ">
+                                <h2 class="font-semibold text-lg">Users You Can Follow</h2>
+                                <!-- <a href="#"> Refresh</a> -->
+                            </div>
+                           
+                            <div class="divide-gray-300 divide-gray-50 divide-opacity-50 divide-y px-4 ">
+
+                                
+                                <div class="flex items-center justify-between py-3">
+                                    <div class="flex flex-1 items-center space-x-4">
+                                        <a href="/profile/tom">
+                                            <img src="/media/profile_images/i.jpg" class="bg-gray-200 rounded-full w-10 h-10">
+                                        </a>
+                                        <div class="flex flex-col">
+                                            <span class="block capitalize font-semibold"> tom </span>
+                                            <span class="block capitalize text-sm"> I am tom, and high school student </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="/profile/tom" class="border border-gray-200 font-semibold px-4 py-1 rounded-full hover:bg-pink-600 hover:text-white hover:border-pink-600 "> View User </a>
+                                </div>
+                                
+                                <div class="flex items-center justify-between py-3">
+                                    <div class="flex flex-1 items-center space-x-4">
+                                        <a href="/profile/tammy">
+                                            <img src="/media/blank-profile-picture.png" class="bg-gray-200 rounded-full w-10 h-10">
+                                        </a>
+                                        <div class="flex flex-col">
+                                            <span class="block capitalize font-semibold"> tammy </span>
+                                            <span class="block capitalize text-sm"> I am tammy from the UK </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="/profile/tammy" class="border border-gray-200 font-semibold px-4 py-1 rounded-full hover:bg-pink-600 hover:text-white hover:border-pink-600 "> View User </a>
+                                </div>
+                                
+                                <div class="flex items-center justify-between py-3">
+                                    <div class="flex flex-1 items-center space-x-4">
+                                        <a href="/profile/jasper">
+                                            <img src="/media/blank-profile-picture.png" class="bg-gray-200 rounded-full w-10 h-10">
+                                        </a>
+                                        <div class="flex flex-col">
+                                            <span class="block capitalize font-semibold"> jasper </span>
+                                            <span class="block capitalize text-sm"> Jasper here </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="/profile/jasper" class="border border-gray-200 font-semibold px-4 py-1 rounded-full hover:bg-pink-600 hover:text-white hover:border-pink-600 "> View User </a>
+                                </div>
+                                
+                                <div class="flex items-center justify-between py-3">
+                                    <div class="flex flex-1 items-center space-x-4">
+                                        <a href="/profile/henry">
+                                            <img src="/media/blank-profile-picture.png" class="bg-gray-200 rounded-full w-10 h-10">
+                                        </a>
+                                        <div class="flex flex-col">
+                                            <span class="block capitalize font-semibold"> henry </span>
+                                            <span class="block capitalize text-sm"> Hey, i am henry and you should know that </span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="/profile/henry" class="border border-gray-200 font-semibold px-4 py-1 rounded-full hover:bg-pink-600 hover:text-white hover:border-pink-600 "> View User </a>
+                                </div>
+                                
+
+                            </div>
+
+                        </div>
+
+                      
+
+                    </div>
+
+                </div>               
+          
+
+            
+
+        
+
+    
+
+
+
+
+
+
+
+
+ <!-- Scripts
+    ================================================== -->
+    <script src="/static/assets/js/tippy.all.min.js"></script>  
+    <script src="/static/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/assets/js/uikit.js"></script>
+    <script src="/static/assets/js/simplebar.js"></script>
+    <script src="/static/assets/js/custom.js"></script>
+
+
+    <script src="unpkg.com/ionicons%25405.2.3/dist/ionicons.js"></script>
+
+
+
+</body></html>

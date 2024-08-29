@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<style>/* Add a black background color to the top navigation */
+		.topnav {
+		  background-color: #333;
+		  overflow: hidden;
+		}
+		
+		/* Style the links inside the navigation bar */
+		.topnav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+
+		}
+		
+		/* Change the color of links on hover */
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		/* Add a color to the active/current link */
+		.topnav a.active {
+		  background-color: #04AA6D;
+		  color: white;
+		}</style>
+	    <style>
+			*{
+				margin-top: 0%;
+			}
+		
+				.nextworkout {
+				position:absolute;
+				top:70px;
+				left:83px;
+				float: left;
+				height: 500px;
+				width: 200px;
+				border: 1px solid black;
+			  }
+			  /* Center the container */
+			  .container {
+				margin: 0 auto;
+				float: middle;
+				width: 650px;
+				height: 500px;
+				border: 1px solid black;
+			  }
+			  
+			  .reps{
+				position:absolute;
+				top:145px;
+				right:83px;
+				color: aliceblue;
+				margin: 0 auto;
+				float: right;
+				height: 500px;
+				width: 200px;
+				border: 1px solid rgb(255, 255, 255);
+			}
+		
+			  .ex1 {
+				float: left;
+				height: 129px;
+				width: 200px;
+				border: 1px solid black;
+			  }
+		
+			  .ex2 {
+				float: left;
+				height: 129px;
+				width: 200px;
+				border: 1px solid black;
+			  }
+		
+			  .ex3 {
+				float: left;
+				height: 127px;
+				width: 200px;
+				border: 1px solid black;
+				padding: 2;
+			  }
+		
+			  .ex4 {
+				float: left;
+				height: 130px;
+				width: 200px;
+				border: 1px solid black;
+			  }
+		
+			  .next {
+				color: hsl(0, 0%, 0%);
+				float: middle;
+				height: 76px;
+				width: 200px;
+				/* border: 1px solid black; */
+				position: relative;
+				left:28px;
+				top: 18px;
+			  }
+		
+		
+			  /* Style the text */
+			  .text {
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				color: hsl(20, 72%, 54%);
+				font-size: 24px;
+				text-align: center;
+				margin-top: 13px;
+			  }
+		
+			  /* Style the video */
+			  video {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			  }
+		
+			img{
+				max-width: 100%;
+				max-height: 100%;
+				display: block; /* remove extra space below image */
+			}
+		
+			.badge{
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				font-size: medium;
+				font-weight: 500;
+				padding:15px;
+				background-color: hsl(20, 72%, 54%);
+				border-radius: 30px;
+				cursor: pointer;
+			}
+		
+		
+		
+			</style>
+		<style>
+			.workout{
+
+			}
+		</style>
+</head>
+  <body style="background-color:rgb(0, 0, 0);">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+	
+	<div class="topnav">
+		<a class="active" href="/">Home</a>
+		<a href="">News</a>
+		<a href="#contact">Contact</a>
+		<a href="trainer">Trainer</a>
+		<a href="workoutbutton">Workout</a>
+		<a href="nutrition">Nutrition </a>
+		<a href="about">About Us </a>
+
+
+	  </div>
+	  <div class="nextworkout">
+
+        <div class="next">
+            <span class="badge rounded-pill text-bg-secondary">Up Next</span>
+        </div>
+
+        <div class="ex1">
+            <img src="../static/ex1.png" alt="squats">
+        </div>
+
+        <div class="ex2">
+            <img src="../static/ex2.jpg" alt="bicepcurl">
+        </div>
+
+        <div class="ex3">
+            <img src="../static/ex3.jpg" alt="pushup">
+        </div>
+
+        <div class="ex4">
+            <img src="../static/ex4.jpg" alt="lunges">
+        </div>
+    </div>
+    <div class="container">
+      <video autoplay muted loop>
+        <source src="https://www.shutterstock.com/shutterstock/videos/1016791639/preview/stock-footage-dumbbell-shoulder-arnold-press-anatomy-of-fitness-and-bodybuilding-target-muscles-are-marked-red.webm" type="video/mp4">
+      </video>
+      <div class="text">
+        <h1>SHOULDER PRESS</h1>
+        <p>Sit on the bench holding two dumbbells at shoulder height with an overhand grip. Press the weights up above your head until your arms are fully extended. Return slowly to the start position.</p>
+      </div>
+    </div>
+
+    <div class="reps">
+        <div class="repcount">
+            <h1>
+                No. of Reps
+            </h1>
+
+        </div>
+    </div>
+	
+</body>
+</html>

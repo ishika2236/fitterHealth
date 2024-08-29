@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+        element.style {}
+
+        @media (min-width: 1400px) .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl,
+        .container-xxl {
+            max-width: 1320px;
+        }
+
+        @media (min-width: 1200px) .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1140px;
+        }
+
+        @media (min-width: 992px) .container,
+        .container-lg,
+        .container-md,
+        .container-sm {
+            max-width: 960px;
+        }
+
+        @media (min-width: 768px) .container,
+        .container-md,
+        .container-sm {
+            max-width: 720px;
+        }
+
+        @media (min-width: 576px) .container,
+        .container-sm {
+            max-width: 540px;
+        }
+
+        .container,
+        .container-fluid,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl,
+        .container-xxl {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            width: 100%;
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        div {
+            display: block;
+        }
+
+        .bg-light {
+            --bs-bg-opacity: 1;
+            background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+        }
+        body {
+            margin: 153px;
+            font-family: var(--bs-body-font-family);
+            font-size: var(--bs-body-font-size);
+            font-weight: var(--bs-body-font-weight);
+            line-height: var(--bs-body-line-height);
+            color: var(--bs-body-color);
+            text-align: var(--bs-body-text-align);
+            background-color: var(--bs-body-bg);
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root,
+        [data-bs-theme=light] {
+            --bs-blue: #0d6efd;
+            --bs-indigo: #6610f2;
+            --bs-purple: #6f42c1;
+            --bs-pink: #d63384;
+            --bs-red: #dc3545;
+            --bs-orange: #fd7e14;
+            --bs-yellow: #ffc107;
+            --bs-green: #198754;
+            --bs-teal: #20c997;
+            --bs-cyan: #0dcaf0;
+            --bs-black: #000;
+            --bs-white: #fff;
+            --bs-gray: #000;
+            --bs-gray-dark: #343a40;
+            --bs-gray-100: #f8f9fa;
+            --bs-gray-200: #e9ecef;
+            --bs-gray-300: #dee2e6;
+            --bs-gray-400: #ced4da;
+            --bs-gray-500: #adb5bd;
+            --bs-gray-600: #000;
+            --bs-gray-700: #495057;
+            --bs-gray-800: #343a40;
+            --bs-gray-900: #212529;
+            --bs-primary: #0d6efd;
+            --bs-secondary: #000;
+            --bs-success: #198754;
+            --bs-info: #0dcaf0;
+            --bs-warning: #ffc107;
+            --bs-danger: #dc3545;
+            --bs-light: #f8f9fa;
+            --bs-dark: #212529;
+            --bs-primary-rgb: 13, 110, 253;
+            --bs-secondary-rgb: 108, 117, 125;
+            --bs-success-rgb: 25, 135, 84;
+            --bs-info-rgb: 13, 202, 240;
+            --bs-warning-rgb: 255, 193, 7;
+            --bs-danger-rgb: 220, 53, 69;
+            --bs-light-rgb: 248, 249, 250;
+            --bs-dark-rgb: 33, 37, 41;
+            --bs-primary-text: #0a58ca;
+            --bs-secondary-text: #000;
+            --bs-success-text: #146c43;
+            --bs-info-text: #087990;
+            --bs-warning-text: #997404;
+            --bs-danger-text: #b02a37;
+            --bs-light-text: #000;
+            --bs-dark-text: #495057;
+            --bs-primary-bg-subtle: #cfe2ff;
+            --bs-secondary-bg-subtle: #f8f9fa;
+            --bs-success-bg-subtle: #d1e7dd;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        element.style {}
+
+        @media (min-width: 1400px) 
+        .container-md,
+        .container-sm,
+        .container-xl,
+        .container-xxl {
+            max-width: 1320px;
+        }
+
+        @media (min-width: 1200px) .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1140px;
+        }
+
+        @media (min-width: 992px) .container,
+        .container-lg,
+        .container-md,
+        .container-sm {
+            max-width: 960px;
+        }
+
+        @media (min-width: 768px) .container,
+        .container-md,
+        .container-sm {
+            max-width: 720px;
+        }
+
+        @media (min-width: 576px) .container,
+        .container-sm {
+            max-width: 540px;
+        }
+
+        .container,
+        .container-fluid,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl,
+        .container-xxl {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            width: 100%;
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        div {
+            display: block;
+        }
+
+        .bg-light {
+            --bs-bg-opacity: 1;
+            background-color: hsl(20, 72%, 54%), var(--bs-bg-opacity)) !important;
+        }
+
+        body {
+            margin: 153px;
+            font-family: var(--bs-body-font-family);
+            font-size: var(--bs-body-font-size);
+            font-weight: var(--bs-body-font-weight);
+            line-height: var(--bs-body-line-height);
+            color: var(--bs-body-color);
+            text-align: var(--bs-body-text-align);
+            background-color: var(--bs-body-bg);
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root,
+        [data-bs-theme=light] {
+            --bs-blue: #0d6efd;
+            --bs-indigo: #6610f2;
+            --bs-purple: #6f42c1;
+            --bs-pink: #d63384;
+            --bs-red: #dc3545;
+            --bs-orange: #fd7e14;
+            --bs-yellow: #ffc107;
+            --bs-green: #198754;
+            --bs-teal: #20c997;
+            --bs-cyan: #0dcaf0;
+            --bs-black: #000;
+            --bs-white: #fff;
+            --bs-gray: #000;
+            --bs-gray-dark: #343a40;
+            --bs-gray-100: #f8f9fa;
+            --bs-gray-200: #e9ecef;
+            --bs-gray-300: #dee2e6;
+            --bs-gray-400: #ced4da;
+            --bs-gray-500: #adb5bd;
+            --bs-gray-600: #000;
+            --bs-gray-700: #495057;
+            --bs-gray-800: #343a40;
+            --bs-gray-900: #212529;
+            --bs-primary: #0d6efd;
+            --bs-secondary: #000;
+            --bs-success: #198754;
+            --bs-info: #0dcaf0;
+            --bs-warning: #ffc107;
+            --bs-danger: #dc3545;
+            --bs-light: #f8f9fa;
+            --bs-dark: #212529;
+            --bs-primary-rgb: 13, 110, 253;
+            --bs-secondary-rgb: 108, 117, 125;
+            --bs-success-rgb: 25, 135, 84;
+            --bs-info-rgb: 13, 202, 240;
+            --bs-warning-rgb: 255, 193, 7;
+            --bs-danger-rgb: 220, 53, 69;
+            --bs-light-rgb: 248, 249, 250;
+            --bs-dark-rgb: 33, 37, 41;
+            --bs-primary-text: #0a58ca;
+            --bs-secondary-text: #000103;
+            --bs-success-text: #146c43;
+            --bs-info-text: #087990;
+            --bs-warning-text: #997404;
+            --bs-danger-text: #b02a37;
+            --bs-light-text: #000;
+            --bs-dark-text: #495057;
+            --bs-primary-bg-subtle: #cfe2ff;
+            --bs-secondary-bg-subtle: #f8f9fa;
+            --bs-success-bg-subtle: #d1e7dd;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+        .card-body{
+            background-color: hsl(20, 72%, 54%);
+            
+        }
+        .card{
+            margin: 40px;
+            width: 100%;
+            height: auto;
+        }
+        .card-text{
+            font-size:20pt;
+            color:black;
+        }
+        .btn-group{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            font-color: black;
+            font-size:20px
+        }
+        .btn .btn-sm .btn-outline-secondary{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            color: #0000;
+            margin:10px;
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+    </style>
+
+    <style>/* Add a black background color to the top navigation */
+              .topnav {
+                position: absolute;
+                background-color: #333;
+                overflow: hidden;
+                top: 0px;
+		            width: 100%;
+              }
+              
+              /* Style the links inside the navigation bar */
+              .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+              }
+              
+              /* Change the color of links on hover */
+              .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+              }
+              
+              /* Add a color to the active/current link */
+              .topnav a.active {
+                background-color: #04AA6D;
+                color: white;
+              }</style>
+
+
+
+</head>
+
+<body style="background-color:rgb(0, 0, 0);">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="">News</a>
+    <a href="#contact">Contact</a>
+    <a href="trainer">Trainer</a>
+    <a href="workoutbutton">Workout</a>
+    <a href="nutrition">Nutrition </a>
+    <a href="about">About Us </a>
+
+
+  </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="bd-placeholder-img card-img-top" width="100%" height="505"> 
+                        <img src="../static/trainer1.png" alt="Trainer"> </div>
+                    <div class="card-body">
+                        <p class="card-text">Kevin</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">See Profile</button>
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">Follow</button>
+                            </div>
+                            <l>188 Trainees</l>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="bd-placeholder-img card-img-top" width="100%" height="505"> 
+                        <img src="../static/trainer2.jpeg" alt="Trainer"> </div>
+                    <div class="card-body">
+                        <p class="card-text">Kayla Itsines</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">See Profile</button>
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">Follow</button>
+                            </div>
+                            <l>387 Trainees</l>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="bd-placeholder-img card-img-top" width="100%" height="505"> 
+                        <img src="../static/trainer3.jpeg" alt="Trainer"> </div>
+                    <div class="card-body">
+                        <p class="card-text">Jamie Anderson</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">See Profile</button>
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">Follow</button>
+                            </div>
+                            <l>150 Trainees</l>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="bd-placeholder-img card-img-top" width="100%" height="505"> 
+                        <img src="../static/trainer2.jpeg" alt="Trainer"> </div>
+                    <div class="card-body">
+                        <p class="card-text">Joe Dowdell</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">See Profile</button>
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">Follow</button>
+                            </div>
+                            <l>467 Trainees</l>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="bd-placeholder-img card-img-top" width="100%" height="505"> 
+                        <img src="../static/trainer5.jpeg" alt="Trainer"> </div>
+                    <div class="card-body">
+                        <p class="card-text">Lucas Sheehan</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">See Profile</button>
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">Follow</button>
+                            </div>
+                            <l>330 Trainees</l>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="bd-placeholder-img card-img-top" width="100%" height="505"> 
+                        <img src="../static/trainer6.jpg" alt="Trainer"> </div>
+                    <div class="card-body">
+                        <p class="card-text">Andres</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">See Profile</button>
+                                <button type="button" style="color:white;" class="btn btn-sm btn-outline-secondary">Follow</button>
+                            </div>
+                            <l>254 Trainees</l>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+    </div>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
